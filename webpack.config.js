@@ -45,7 +45,9 @@ module.exports = {
           window.AtomicConfig = {
             jwt: "${token}",
             apiHost: "${atomicConfig.apiHost}",
-            streamContainerId: "${atomicConfig.streamContainerId}",
+            firstStreamContainerId: "${atomicConfig.firstStreamContainerId}",
+            secondStreamContainerId: "${atomicConfig.secondStreamContainerId}",
+            thirdStreamContainerId: "${atomicConfig.thirdStreamContainerId}",
             apiKey: "${atomicConfig.apiKey}",
             environmentId: "${atomicConfig.environmentId}",
           };`

@@ -3,7 +3,9 @@ module.exports = {
   userId: "",
   apiKey: "",
   apiHost: "",
-  streamContainerId: "",
+  firstStreamContainerId: "",
+  secondStreamContainerId: "",
+  thirdStreamContainerId: "",
   environmentId: "",
   // Optional JWT configuration values
   issuer: "",
