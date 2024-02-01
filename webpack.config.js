@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { generateKey } = require("./src/util/generate-jwt.js");
-const atomicConfig = require("./src/config/atomicConfig.js")
+const atomicConfig = require("./src/config/atomicConfig.js");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -37,7 +37,7 @@ module.exports = {
           const token = await generateKey(
             atomicConfig.userId,
             atomicConfig.apiKey,
-            atomicConfig.issuer,
+            atomicConfig.issuer
           );
           res.set("Content-Type", "application/javascript");
           res.send(
@@ -53,10 +53,7 @@ module.exports = {
           };`
           );
         } catch (e) {
-          console.error(
-            "*** Error creating auth token" +
-              e
-          );
+          console.error("*** Error creating auth token" + e);
           res.status(500);
         }
       });
