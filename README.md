@@ -16,7 +16,7 @@ npm install
 This app uses JWT for authentication to communicate with the Atomic Platform. Run the following command to generate a public/private key pair for authentication:
 
 ```bash
-npm generate-keys
+npm run generate-keys
 ```
 The generated keys will be stored in the `src/keys` directory. Once this is done, open the `jwtRS512.key.pub` file and copy the generated public key. This key can be used to create a new API key in the Workbench.
 
@@ -29,7 +29,7 @@ You will also need to add your own values to the configuration constants found i
 
 Run the app using:
 ```bash
-npm  start
+npm run start
 ```
 
 ### Runtime Variables
