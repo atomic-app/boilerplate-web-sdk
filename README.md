@@ -18,7 +18,7 @@ This app uses JWT for authentication to communicate with the Atomic Platform. Ru
 ```bash
 npm run generate-keys
 ```
-The generated keys will be stored in the `src/keys` directory. Once this is done, open the `jwtRS512.key.pub` file and copy the generated public key. This key can be used to create a new API key in the Workbench.
+The generated keys will be stored in the `src/keys` directory. Once this is done, open the `boilerplate-example.key.pub` file and copy the generated public key. This key can be used to create a new API key in the Workbench.
 
 You can read about this more in depth at [SDK Authentication](https://documentation.atomic.io/sdks/auth-SDK).
 
